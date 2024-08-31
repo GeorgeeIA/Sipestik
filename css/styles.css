@@ -1,0 +1,581 @@
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+p {
+  color: #555;
+  font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+.card-img-top {
+  height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+  object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+}
+
+.p-large {
+  font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+}
+
+.p-small {
+  font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #333;
+  font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+h2 {
+  color: #333;
+  font: 700 2rem/2.625rem "Open Sans", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+h3 {
+  color: #333;
+  font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+h4 {
+  color: #333;
+  font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
+  letter-spacing: -0.1px;
+}
+
+h5 {
+  color: #333;
+  font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
+  letter-spacing: -0.1px;
+}
+
+h6 {
+  color: #333;
+  font: 700 1rem/1.375rem "Open Sans", sans-serif;
+  letter-spacing: -0.1px;
+}
+
+.above-heading {
+  color: #0b8494;
+  font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.p-heading {
+  margin-bottom: 3.25rem;
+}
+
+.testimonial-text {
+  font: italic 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+.testimonial-author {
+  font: 700 1rem/1.625rem "Open Sans", sans-serif;
+  letter-spacing: -0.1px;
+}
+
+.li-space-lg li {
+  margin-bottom: 0.375rem;
+}
+
+.indent {
+  padding-left: 1.25rem;
+}
+
+a {
+  color: #555;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+a.white {
+  color: #fff;
+}
+
+.decorative-line {
+  display: block;
+  width: 5rem;
+  height: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blue {
+  color: #0b8494;
+}
+
+.btn-solid-reg {
+  display: inline-block;
+  padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+  border: 0.125rem solid #0b8494;
+  border-radius: 2rem;
+  background-color: #0b8494;
+  color: #fff;
+  font: 700 0.875rem/0 "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+  background-color: transparent;
+  color: #0b8494;
+  text-decoration: none;
+}
+
+.btn-solid-lg {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.125rem solid #0b8494;
+  border-radius: 2rem;
+  background-color: #0b8494;
+  color: #fff;
+  font: 700 0.875rem/0 "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+  background-color: transparent;
+  color: #0b8494;
+  text-decoration: none;
+}
+
+.btn-outline-reg {
+  display: inline-block;
+  padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+  border: 0.125rem solid #0b8494;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #0b8494;
+  font: 700 0.875rem/0 "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+  background-color: #0b8494;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline-lg {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.125rem solid #0b8494;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #0b8494;
+  font: 700 0.875rem/0 "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+  background-color: #0b8494;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline-sm {
+  display: inline-block;
+  padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+  border: 0.125rem solid #0b8494;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #0b8494;
+  font: 700 0.875rem/0 "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+  background-color: #0b8494;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%; /* centers the loading animation vertically one the screen */
+  left: 50%; /* centers the loading animation horizontally one the screen */
+  width: 3.75rem;
+  height: 1.25rem;
+  margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */
+  text-align: center;
+}
+
+.spinner > div {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #0b8494;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/**************************/
+/*     03. Navigation     */
+/**************************/
+.navbar-custom {
+  background-color: #0b8494;
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+  font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
+  transition: all 0.2s;
+}
+
+.navbar-custom .container {
+  max-width: 70rem;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+  width: 4.4375rem;
+  height: 1.75rem;
+}
+
+.navbar-custom .navbar-brand.logo-text {
+  font: 700 2rem/1.5rem "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+  color: #f7f5f5;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+  color: #fff;
+  opacity: 1;
+}
+
+.navbar-custom .nav-item .btn-outline-sm {
+  margin-top: 0.25rem;
+  margin-bottom: 1.375rem;
+  margin-left: 0.5rem;
+  border: 0.125rem solid #fff;
+  color: #fff;
+}
+
+.navbar-custom .nav-item .btn-outline-sm:hover {
+  background-color: #fff;
+  color: #0b8494;
+}
+
+.navbar-custom .navbar-toggler {
+  padding: 0;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-times {
+  display: none;
+}
+
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-bars {
+  display: inline-block;
+}
+
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-bars {
+  display: none;
+}
+
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-times {
+  display: inline-block;
+  margin-right: 0.125rem;
+}
+
+/*********************/
+/*    04. Header     */
+/*********************/
+.header {
+  background-color: #0b8494;
+}
+
+.header .header-content {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.header .text-container {
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.header .p-large {
+  margin-bottom: 2rem;
+  color: #f3f7fd;
+}
+
+.header .btn-solid-lg {
+  margin-right: 0.5rem;
+  margin-bottom: 1.125rem;
+  margin-left: 0.5rem;
+  border-color: #f3f7fd;
+  background-color: #f3f7fd;
+  color: #0b8494;
+}
+
+.header .btn-solid-lg:hover {
+  background: transparent;
+  color: #f3f7fd;
+}
+
+.header .btn-outline-lg {
+  border-color: #f3f7fd;
+  color: #f3f7fd;
+}
+
+.header .btn-outline-lg:hover {
+  background-color: #f3f7fd;
+  color: #0b8494;
+}
+
+.header-frame {
+  margin-top: -1px; /* To remove white margin in FF */
+  width: 100%;
+  height: 2.25rem;
+}
+
+/***************************/
+/*     06. Description     */
+/***************************/
+.cards-1 {
+  padding-top: 3.25rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.cards-1 .h2-heading {
+  margin-bottom: 3.5rem;
+}
+
+.cards-1 .card {
+  max-width: 21rem;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+}
+
+.cards-1 .card-image {
+  max-width: 16rem;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+
+.cards-1 .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.cards-1 .card-body {
+  padding: 0;
+}
+
+/***********************/
+/*     09. Details     */
+/***********************/
+.basic-1 {
+  padding-top: 7.5rem;
+  padding-bottom: 8rem;
+}
+
+.basic-1 .text-container {
+  margin-bottom: 3.75rem;
+}
+
+.basic-1 .list-unstyled {
+  margin-bottom: 1.375rem;
+}
+
+.basic-1 .list-unstyled .fas {
+  color: #0b8494;
+  font-size: 0.5rem;
+  line-height: 1.625rem;
+}
+
+.basic-1 .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+/**********************/
+/*     14. Footer     */
+/**********************/
+.footer-frame {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  background-color: #0b8494;
+}
+
+.footer .footer-col {
+  margin-bottom: 2.25rem;
+}
+
+.footer h4 {
+  margin-bottom: 0.625rem;
+  color: #fff;
+}
+
+.footer .list-unstyled,
+.footer p {
+  color: #f3f7fd;
+}
+
+.footer .footer-col.middle .list-unstyled .fas {
+  color: #fff;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.footer .footer-col.middle .list-unstyled .media-body {
+  margin-left: 0.5rem;
+}
+
+.footer .footer-col.last .list-unstyled .fas {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.footer .footer-col.last .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.footer .footer-col.last .list-unstyled .fas.fa-globe {
+  margin-left: 1rem;
+  margin-right: 0.625rem;
+}
+
+/*************************/
+/*     15. Copyright     */
+/*************************/
+.copyright {
+  padding-top: 1rem;
+  padding-bottom: 0.375rem;
+  background-color: #0b8494;
+  text-align: center;
+}
+
+.copyright .p-small {
+  padding-top: 1.375rem;
+  border-top: 1px solid #ffffff;
+  color: #f3f7fd;
+}
+
+.copyright a {
+  color: #f3f7fd;
+  text-decoration: none;
+}
+
+/**********************************/
+/*     16. Back To Top Button     */
+/**********************************/
+a.back-to-top {
+  position: fixed;
+  z-index: 999;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 1.875rem;
+  background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
+  background-size: 1.125rem 1.125rem;
+  text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+  background-color: #4332c5;
+}
