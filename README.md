@@ -1,3 +1,5 @@
+![Poster Sipestik](images/PosterSipestik.png)
+
 # Sipestik - Sistem Pemesanan Tiket Event
 
 # George Isaiah Abiyoso
