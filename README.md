@@ -28,3 +28,11 @@ Sipestik adalah sebuah aplikasi web yang dikembangkan untuk memudahkan pengguna 
 - Backend: PHP Native
 - Database: MySQL
 - Library: FPDF untuk pembuatan tiket PDF
+
+## Instalasi
+
+- Clone repository ini: git clone https://github.com/GeorgeeIA/Sipestik.git
+- Buka folder proyek dan pindahkan file ke server lokal Anda (XAMPP, WAMP, LAMP, dll.).
+- Buat database di MySQL dan impor file database.sql yang telah disediakan.
+- Konfigurasikan koneksi database di file includes/config.php.
+- Silahkan jalankan server lokal dan akses website melalui browser Anda.
